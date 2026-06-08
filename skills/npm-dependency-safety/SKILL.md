@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Pi coding agent; Node.js projects using npm, pnpm, yarn, bun, or another npm-registry-compatible package manager.
 metadata:
   author: ludevdot
-  version: "0.1.0"
+  version: "0.1.1"
   copyright: "Copyright 2026 ludevdot"
 ---
 

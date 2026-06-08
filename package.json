@@ -1,6 +1,6 @@
 {
   "name": "pi-dependency-safety",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pi skill for reviewing npm-registry dependency safety across npm, pnpm, yarn, and bun before project initialization, feature work, package additions, or package updates.",
   "author": "ludevdot",
   "scripts": {
@@ -16,7 +16,15 @@
   },
   "keywords": [
     "pi-package",
+    "pi-skill",
+    "pi",
+    "pi-coding-agent",
     "agent-skill",
+    "skill",
+    "skills",
+    "dependency-safety",
+    "dependency-review",
+    "dependency-audit",
     "npm",
     "pnpm",
     "yarn",

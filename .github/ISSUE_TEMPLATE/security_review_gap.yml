@@ -1,0 +1,64 @@
+name: Dependency safety gap
+description: Report a missed risk, false positive, or dependency-review policy gap
+title: "safety: "
+labels: ["type:bug", "security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for dependency-safety review gaps. Do not include secrets, tokens, private package names, or unreleased vulnerability details in a public issue.
+  - type: dropdown
+    id: gap-type
+    attributes:
+      label: Gap type
+      options:
+        - Missed malicious or risky package signal
+        - Missed CVE/advisory
+        - False positive
+        - Package-manager policy gap
+        - Privacy/network approval issue
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: package-manager
+    attributes:
+      label: Package manager
+      options:
+        - npm
+        - pnpm
+        - yarn
+        - bun
+        - mixed
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What did the skill miss or misclassify?
+      placeholder: Keep package names generic if disclosure is sensitive.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected review behavior
+      description: What should the skill have asked, checked, blocked, or reported?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include public advisory IDs, Socket.dev posts, package-manager docs, or sanitized report snippets.
+    validations:
+      required: false
+  - type: textarea
+    id: automation
+    attributes:
+      label: Existing automation
+      description: Mention Dependabot, Renovate, CI scanners, Socket, Snyk, OSV, Trivy, or audit jobs if relevant.
+    validations:
+      required: false

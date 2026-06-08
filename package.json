@@ -1,0 +1,41 @@
+{
+  "name": "pi-dependency-safety",
+  "version": "0.1.0",
+  "description": "Pi skill for reviewing npm-registry dependency safety across npm, pnpm, yarn, and bun before project initialization, feature work, package additions, or package updates.",
+  "author": "ludevdot",
+  "scripts": {
+    "pack:dry": "npm pack --dry-run --json"
+  },
+  "homepage": "https://github.com/ludevdot/pi-dependency-safety#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludevdot/pi-dependency-safety.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ludevdot/pi-dependency-safety/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "agent-skill",
+    "npm",
+    "pnpm",
+    "yarn",
+    "bun",
+    "security",
+    "supply-chain",
+    "cve"
+  ],
+  "license": "Apache-2.0",
+  "files": [
+    "skills",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "image": "https://raw.githubusercontent.com/ludevdot/pi-dependency-safety/main/assets/logo.png"
+  }
+}
